@@ -1,7 +1,5 @@
 # MicroDocs
 
-# Welcome
-
 ## Overview
 Micro Docs is a simple system for creating web-accessible documentation using Markdown.
 
