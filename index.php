@@ -16,6 +16,8 @@
 	function parseIndex() {
 		global $address;
 		global $page;
+		global $title;
+		global $pageTitle;
 
 		$index = file_get_contents('documentation/_index.md');
 		$output = "<ol>\r\n";
@@ -46,7 +48,10 @@
 			if (preg_match("/\(([\w\W]*)\)\[([\w\W]*)\]/", $lineContents[1], $matches)) {
 				if ($page=="") $page = $matches[2];
 				$output .= "<li><a href=".$address."/".$matches[2]."/";
-				if ($page==$matches[2]) $output .= " id='currentPage'";
+				if ($page==$matches[2]) {
+					$output .= " id='currentPage'";
+					$pageTitle = $matches[1]." - ".$title;
+				}
 				$output .= ">".$matches[1]."</a></li>\r\n";
 			} else {
 				$output .= "<li>".$lineContents[1]."</li>\r\n";			
@@ -67,8 +72,6 @@
 
 	include ("header.php");
 
-	echo"<div id=mainContainer>";
-	echo"<div id=index><h1>".$title."</h1>\r\n".$index."</div>";
 	echo"<div id=page>".$pageParsed."</div>";
 	echo"</div>";
 

@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title><?php echo $title; ?></title>
+		<title><?php echo $pageTitle; ?></title>
 		<meta name="generator" content="MicroDocs: https://soft.rendeer.pl/MicroDocs/" />
 		<link rel="stylesheet" href="<?php echo $address; ?>/md-themes/default/style.css" type="text/css">
 		<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $address; ?>/assets/apple-touch-icon.png">
@@ -12,3 +12,12 @@
 	</head>
 	<body>
 
+
+	<div id=mainContainer>
+	<div id=index>
+		<a href="<?php echo $address; ?>" alt="<?php echo $title; ?>" id=indexHeader>
+			<img src="<?php echo $address; ?>/assets/logo.png" id="logo" alt="<?php echo $title; ?>" />
+			<h1><?php echo $title; ?></h1>
+		</a>
+<?php echo $index; ?>
+	</div>

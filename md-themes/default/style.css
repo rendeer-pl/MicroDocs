@@ -5,19 +5,27 @@ body {
 	padding: 0 0 0 0;
 }
 
+a {
+	color: #ff4cc1;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
 ol {
 	padding-left: 20px;
 }
 
 #index, #page {
 	float: left;
+	line-height: 1.5em;
 }
 
 #index {
 	min-width: 200px;
 	background-color: #2d2d2d;
 	height: 100%;
-	padding-left: 20px;
 	color: #ffffff;
 }
 
@@ -25,13 +33,25 @@ ol {
 	font-weight: bold;
 }
 
-#index a {
-	color: #ff4cc1;
+#indexHeader {
+	color: #ffffff;
 	text-decoration: none;
 }
 
-#index a:hover {
+#indexHeader a:hover {
 	text-decoration: underline;
+}
+
+#index #logo {
+    max-width: 75px;
+    border: 1px solid gray;
+    display: block;
+    margin: 10px auto;
+}
+
+#index h1, #index ol {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #page {
