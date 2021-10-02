@@ -1,2 +1,3 @@
-* (Introduction)[introduction]
-	* (Welcome)[introduction/welcome]
+* [Introduction](introduction)
+	* [Welcome](introduction/welcome)
+	* [First Steps](introduction/first_steps)

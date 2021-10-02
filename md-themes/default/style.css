@@ -5,10 +5,17 @@ body {
 	padding: 0 0 0 0;
 }
 
+code {
+	font-size: 1.3em;
+	background-color: #ddf4fb;
+	padding: 2px;
+}
+
 a {
 	color: #ff4cc1;
 	text-decoration: none;
 }
+
 a:hover {
 	text-decoration: underline;
 }

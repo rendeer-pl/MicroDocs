@@ -45,7 +45,7 @@
 
 			$lineContents = explode("* ",$line);
 
-			if (preg_match("/\(([\w\W]*)\)\[([\w\W]*)\]/", $lineContents[1], $matches)) {
+			if (preg_match("/\[([\w\W]*)\]\(([\w\W]*)\)/", $lineContents[1], $matches)) {
 				if ($page=="") $page = $matches[2];
 				$output .= "<li><a href=".$address."/".$matches[2]."/";
 				if ($page==$matches[2]) {

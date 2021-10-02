@@ -1,7 +1,7 @@
 <?php
 
 	$address = 'https://soft.rendeer.pl/MicroDocs/docs';
-	$title = 'MicroDocs';
+	$title = 'Micro Docs';
 	$DEBUG = TRUE;
 
 ?>
