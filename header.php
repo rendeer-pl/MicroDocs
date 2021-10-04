@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<title><?php echo $pageTitle; ?></title>
+		<meta charset="utf-8">
 		<meta name="generator" content="MicroDocs: https://soft.rendeer.pl/MicroDocs/" />
 		<link rel="stylesheet" href="<?php echo $address; ?>/md-themes/default/style.css" type="text/css">
 		<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $address; ?>/assets/apple-touch-icon.png">
