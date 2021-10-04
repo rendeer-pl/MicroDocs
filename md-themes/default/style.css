@@ -37,6 +37,7 @@ td, th {
 #index, #page {
 	float: left;
 	line-height: 1.5em;
+	padding-bottom: 30px;
 }
 
 #index {
