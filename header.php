@@ -17,8 +17,8 @@
 	<div id=mainContainer>
 	<div id=index>
 		<a href="<?php echo $address; ?>" alt="<?php echo $title; ?>" id=indexHeader>
-			<img src="<?php echo $address; ?>/assets/logo.png" id="logo" alt="<?php echo $title; ?>" />
-			<h1><?php echo $title; ?></h1>
+<?php if ($showLogoInIndex) echo"<img src=\"$address/assets/logo.png\" id=\"logo\" alt=\"$title\" />"; ?>
+<?php if ($showTitleInIndex) echo"<h1>$title</h1>"; ?>
 		</a>
 <?php echo $index; ?>
 	</div>

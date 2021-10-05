@@ -4,4 +4,7 @@
 	$title = 'Micro Docs';
 	$DEBUG = TRUE;
 
+	$showLogoInIndex = TRUE;
+	$showTitleInIndex = TRUE;
+
 ?>

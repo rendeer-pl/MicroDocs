@@ -61,15 +61,18 @@ td, th {
 }
 
 #index #logo {
-    max-width: 75px;
-    border: 1px solid gray;
+    max-width: 150px;
+    max-height: 75px;
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
 }
 
-#index h1, #index ol {
-    margin-left: 20px;
-    margin-right: 20px;
+#index h1 {
+	text-align: center;
+}
+
+#index ol {
+	list-style-type: none;
 }
 
 #page {
